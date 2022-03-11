@@ -7,7 +7,9 @@ button {
   background-color: #545454;
   color: #A8A8A8;
   text-align: center;
-  width: Xu;
+}
+
+  /*width: Xu;
   height: Yu;
   position: absolute;
   top: 50%;
@@ -16,7 +18,7 @@ button {
   margin-top: -(Y/2)u;
 }
   
-/*.button {
+.button {
   background-color: #151515;
   color: #2A2A2A;
   text-align: center;
