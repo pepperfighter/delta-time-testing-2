@@ -5,8 +5,15 @@ body {
 
 button {
   background-color: #151515;
-  color: #2A2A2A;
+  color: #A8A8A8;
   text-align: center;
+  width: Xu;
+  height: Yu;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -(X/2)u;
+  margin-top: -(Y/2)u;
 }
   
 /*.button {
