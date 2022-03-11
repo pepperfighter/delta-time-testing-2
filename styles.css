@@ -9,8 +9,7 @@ body {
   text-align: center;
 }
 
- //Replace X and Y with a number and u with a unit. do calculations
- //and remove parens
+ /* Replace X and Y with a number and u with a unit. do calculations and remove parens */
 .centered_div {
    width: Xu;
    height: Yu;
