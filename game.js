@@ -18,8 +18,12 @@ function buyMiner(){
     document.getElementById('minerCost').innerHTML = nextCost;  //updates the miner cost for the user
 };
 
+let last_time = null;
 window.setInterval(function(){
   const current_time = Date.now();
+  if (last_time === null){
+    last_time = current_time;
+  }
 }, 1000);
 
 //window.setInterval(function(){
