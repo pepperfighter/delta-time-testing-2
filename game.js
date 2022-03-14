@@ -1,17 +1,3 @@
-let lastTick = performance.now()
-
-function tick(nowish) {
-  const delta = nowish - lastTick
-  lastTick = nowish
-
-  update(delta)
-  render(delta)
-
-  window.requestAnimationFrame(tick)
-}
-
-window.requestAnimationFrame(tick)
-
 var rocks = 0;
 
 function rockClick(number){
@@ -32,9 +18,10 @@ function buyMiner(){
     document.getElementById('minerCost').innerHTML = nextCost;  //updates the miner cost for the user
 };
 
-function minerAction(){
-  rocks = rocks + (miners * (tick / 1000));
-}
+window.setInterval(function(){
+  const current_time = Date.now();
+}, 1000);
+
 //window.setInterval(function(){
   //rockClick(miners);
 //}, 1000);
