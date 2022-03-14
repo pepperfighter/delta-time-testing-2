@@ -1,3 +1,17 @@
+let lastTick = performance.now()
+
+function tick(nowish) {
+  const delta = nowish - lastTick
+  lastTick = nowish
+
+  update(delta)
+  render(delta)
+
+  window.requestAnimationFrame(tick)
+}
+
+window.requestAnimationFrame(tick)
+
 var rocks = 0;
 
 function rockClick(number){
@@ -17,20 +31,6 @@ function buyMiner(){
     var nextCost = Math.floor(10 * Math.pow(1.1,miners));       //works out the cost of the next miner
     document.getElementById('minerCost').innerHTML = nextCost;  //updates the miner cost for the user
 };
-
-let lastTick = performance.now()
-
-function tick(nowish) {
-  const delta = nowish - lastTick
-  lastTick = nowish
-
-  update(delta)
-  render(delta)
-
-  window.requestAnimationFrame(tick)
-}
-
-window.requestAnimationFrame(tick)
 
 //window.setInterval(function(){
   //rockClick(miners);
