@@ -32,6 +32,9 @@ function buyMiner(){
     document.getElementById('minerCost').innerHTML = nextCost;  //updates the miner cost for the user
 };
 
+function minerAction(){
+  rocks = rocks + (miners * (tick / 1000));
+}
 //window.setInterval(function(){
   //rockClick(miners);
 //}, 1000);
