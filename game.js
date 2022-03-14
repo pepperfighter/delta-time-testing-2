@@ -24,6 +24,8 @@ window.setInterval(function(){
   if (last_time === null){
     last_time = current_time;
   }
+  const delta_time = current_time - last_time;
+  last_time = current_time; //make sure to update "last_time"
 }, 1000);
 
 //window.setInterval(function(){
